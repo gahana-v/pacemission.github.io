@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Mission - NASA for Kids!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            
+            font-family: 'Garamond', cursive, serif;
+            font-size: 26px;
+            background-image: url('bg1.jpg');
+            background-size: contain;
+            background-position: center;
+            color: #f0e8e8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+           
+             
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            color: #ffffffd4;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #0f1b30;
+            padding: 10px;
+            text-align: center;
+            animation: slideIn 2s;
+        }
+        nav a {
+            margin-right: 20px;
+          
+            color: #fef4f4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .ppt-section, .quiz-section {
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+        button {
+            background-color: #35294b;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            margin-right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        button:hover {
+            background-color: #32054d;
+        }
+        
+        .ppt-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .ppt-container a {
+            margin-right: 20px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+        }
+        .ppt-container a:hover {
+            box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+        }
+        .rotate {
+            position: absolute;
+  right: 20px;
+  margin-top: 70px;
+  animation: rotate 8s linear infinite;
+  transform-origin: 20% 50%;
+}
+.rotate img {
+  width: 190px; /* adjust the image width and height as needed */
+  height: 190px;
+   /* optional: add a circular border radius */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.top-left-image {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.top-left-image img {
+  width: 100px; /* adjust the image width and height as needed */
+  height: 100px;
+
+}
+.left-image {
+  position: absolute;
+  top: 590px;
+  left: 120px;
+}
+
+.left-image img {
+  width: 180px; /* adjust the image width and height as needed */
+  height: 180px;
+}
+.right-image {
+  position: absolute;
+  top: 810px;
+  right: 0px;
+}
+
+.right-image img {
+  width: 250px; /* adjust the image width and height as needed */
+  height: 210px;
+}
+.left1-image {
+  position: absolute;
+  top: 1120px;
+  left: 70px;
+}
+
+.left1-image img {
+  width: 280px; /* adjust the image width and height as needed */
+  height: 280px;
+}
+.right1-image {
+  position: absolute;
+  top: 1380px;
+  right: 0px;
+}
+
+.right1-image img {
+  width: 290px; /* adjust the image width and height as needed */
+  height: 290px;
+}
+.right2-image {
+  position: absolute;
+  top: 2250px;
+  right: 230px;
+}
+
+.right2-image img {
+  width: 750px; /* adjust the image width and height as needed */
+  height: 559px;
+}
+.question {
+            margin-bottom: 20px;
+        }
+        .answer {
+            margin-bottom: 10px;
+        }
+        .result {
+            font-weight: bold;
+            color: green;
+        }
+        .wrong {
+            font-weight: bold;
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top-left-image">
+        <img src="rocket.png" alt="Your Image">
+      </div>
+
+      
+<header>
+    <h1>Welcome to NASA's PACE Mission!</h1>
+    
+</header>
+
+<nav>
+    <a href="PACE.html">Home</a>
+    <a href="mission.html">Mission</a>
+    <a href="presentations.html">Presentations</a>
+    <a href="quiz.html">Quiz</a></nav>
+</body>
+    
+
+<body>
+    <header>
+        <h1>PACE Mission Quiz</h1>
+    </header>
+    <section class="content">
+        <h2>Quiz Time!</h2>
+        <p>Test your knowledge about the PACE Mission!</p><br>
+        
+    
+    <div class="question">
+        <p>1.What does PACE stand for?</p>
+        <input type="radio" name="q1" value="Plankton, Aerosol, Cloud, and ocean Ecosystem"> Plankton, Aerosol, Cloud, and ocean Ecosystem<br>
+        <input type="radio" name="q1" value="Planetary, Atmospheric, Climate, and ocean Exploration"> Planetary, Atmospheric, Climate, and ocean Exploration<br>
+        <input type="radio" name="q1" value="Polar, Atmospheric, Climate, and ocean Expedition"> Polar, Atmospheric, Climate, and ocean Expedition<br>
+        <button onclick="checkAnswer1()">Submit</button>
+        <p id="result1"></p>
+    </div>
+    <div class="question">
+        <p>2.What does PACE do? </p>
+        <input type="radio" name="q2" value="Studies the movement of tectonic plates"> Studies the movement of tectonic plates<br>
+        <input type="radio" name="q2" value="Helps scientists understand ocean health and air quality"> Helps scientists understand ocean health and air quality<br>
+        <input type="radio" name="q2" value="Analyzes the population growth of penguins in Antarctica"> Analyzes the population growth of penguins in Antarctica<br>
+        <button onclick="checkAnswer2()">Submit</button>
+        <p id="result2"></p>
+    </div>
+    <div class="question">
+        <p>3.Why is PACE important?</p>
+        <input type="radio" name="q3" value="It helps track harmful algal blooms and understand climate and air quality"> It helps track harmful algal blooms and understand climate and air quality<br>
+        <input type="radio" name="q3" value="It monitors space debris and meteor impacts"> It monitors space debris and meteor impacts<br>
+        <input type="radio" name="q3" value="It observes the migration patterns of birds"> It observes the migration patterns of birds<br>
+        <button onclick="checkAnswer3()">Submit</button>
+        <p id="result3"></p>
+    </div>
+    <div class="question">
+        <p>4.How does PACE study the ocean and atmosphere?</p>
+        <input type="radio" name="q4" value="Using satellites to measure Earth's gravitational pull"> Using satellites to measure Earth's gravitational pull<br>
+        <input type="radio" name="q4" value="With special tools to see ocean colors and measure light"> With special tools to see ocean colors and measure light<br> 
+        <input type="radio" name="q4" value="By deploying underwater robots to collect samples"> By deploying underwater robots to collect samples<br>
+        <button onclick="checkAnswer4()">Submit</button>
+        <p id="result4"></p>
+    </div>
+    <div class="question">
+        <p>5.Why study the ocean and atmosphere together? </p>
+        <input type="radio" name="q5" value="They are not connected in any significant way"> They are not connected in any significant way <br>
+        <input type="radio" name="q5" value="They have many interconnected processes affecting each other"> They have many interconnected processes affecting each other <br> 
+        <input type="radio" name="q5" value="To understand how the ocean affects lunar phases"> To understand how the ocean affects lunar phases<br>
+        <button onclick="checkAnswer5()">Submit</button>
+        <p id="result5"></p>
+    </div>
+    <div class="question">
+        <p>6.Which PACE instrument helps track aerosols from wildfires? </p>
+        <input type="radio" name="q6" value="SPEXone and HARP2 (polarimeters)">SPEXone and HARP2 (polarimeters) <br>
+        <input type="radio" name="q6" value="Ground-based monitors">Ground-based monitors <br> 
+        <input type="radio" name="q6" value="Ocean circulation models">Ocean circulation models <br>
+        <button onclick="checkAnswer6()">Submit</button>
+        <p id="result6"></p>
+    </div>
+    <div class="question">
+        <p>7.How does PACE help the seafood industry? </p>
+        <input type="radio" name="q7" value="By predicting harmful algal blooms that can affect shellfish">By predicting harmful algal blooms that can affect shellfish <br>
+        <input type="radio" name="q7" value="By improving fish breeding techniques">By improving fish breeding techniques <br> 
+        <input type="radio" name="q7" value="By cleaning polluted waters">By cleaning polluted waters <br>
+        <button onclick="checkAnswer7()">Submit</button>
+        <p id="result7"></p>
+    </div>
+    <div class="question">
+        <p>8.Who is part of the PACE Community of Practice?</p>
+        <input type="radio" name="q8" value="People unfamiliar with satellite data">People unfamiliar with satellite data <br>
+        <input type="radio" name="q8" value="Experts who regularly use NASA satellite data">Experts who regularly use NASA satellite data <br> 
+        <input type="radio" name="q8" value="Farmers and fishermen">Farmers and fishermen <br>
+        <button onclick="checkAnswer8()">Submit</button>
+        <p id="result8"></p>
+    </div>
+    <div class="question">
+        <p>9.What is one of the main goals of the PACE Applications Program?</p>
+        <input type="radio" name="q9" value="Developing space travel technology">Developing space travel technology <br>
+        <input type="radio" name="q9" value="Applying satellite data to address societal needs">Applying satellite data to address societal needs <br> 
+        <input type="radio" name="q9" value="Building new satellites">Building new satellites <br>
+        <button onclick="checkAnswer9()">Submit</button>
+        <p id="result9"></p>
+    </div>
+    <div class="question">
+        <p>10.What type of communities benefit from PACE data on air quality? </p>
+        <input type="radio" name="q10" value="Communities with advanced air monitoring systems">Communities with advanced air monitoring systems <br>
+        <input type="radio" name="q10" value="Underserved communities with limited access to air quality information">Underserved communities with limited access to air quality information <br> 
+        <input type="radio" name="q10" value="Communities located near oceans">Communities located near oceans <br>
+        <button onclick="checkAnswer10()">Submit</button>
+        <p id="result10"></p>
+    </div>
+
+
+    </section>
+    
+
+    <script>
+        function checkAnswer1() {
+            var answer = document.querySelector('input[name="q1"]:checked').value;
+            if (answer === "Plankton, Aerosol, Cloud, and ocean Ecosystem") {
+                document.getElementById("result1").innerHTML = "Correct!";
+                document.getElementById("result1").classList.add("result");
+            } else {
+                document.getElementById("result1").innerHTML = "Wrong! The correct answer is Plankton, Aerosol, Cloud, and ocean Ecosystem.";
+                document.getElementById("result1").classList.add("wrong");
+            }
+        }
+
+        function checkAnswer2() {
+            var answer = document.querySelector('input[name="q2"]:checked').value;
+            if (answer === "Helps scientists understand ocean health and air quality") {
+                document.getElementById("result2").innerHTML = "Correct!";
+                document.getElementById("result2").classList.add("result");
+            } else {
+                document.getElementById("result2").innerHTML = "Wrong! The correct answer is Helps scientists understand ocean health and air quality";
+                document.getElementById("result2").classList.add("wrong");
+            }
+        }
+
+        function checkAnswer3() {
+            var answer = document.querySelector('input[name="q3"]:checked').value;
+            if (answer === "It helps track harmful algal blooms and understand climate and air quality") {
+                document.getElementById("result3").innerHTML = "Correct!";
+                document.getElementById("result3").classList.add("result");
+            } else {
+                document.getElementById("result3").innerHTML = "Wrong! The correct answer is It helps track harmful algal blooms and understand climate and air quality";
+                document.getElementById("result3").classList.add("wrong");
+            }
+        }
+
+        function checkAnswer4() {
+            var answer = document.querySelector('input[name="q4"]:checked').value;
+            if (answer === "With special tools to see ocean colors and measure light") {
+                document.getElementById("result4").innerHTML = "Correct!";
+                document.getElementById("result4").classList.add("result");
+            } else {
+                document.getElementById("result4").innerHTML = "Wrong! The correct answer is With special tools to see ocean colors and measure light";
+                document.getElementById("result4").classList.add("wrong");
+            }
+        }
+
+        function checkAnswer5() {
+            var answer = document.querySelector('input[name="q5"]:checked').value;
+            if (answer === "They have many interconnected processes affecting each other") {
+                document.getElementById("result5").innerHTML = "Correct!";
+                document.getElementById("result5").classList.add("result");
+            } else {
+                document.getElementById("result5").innerHTML = "Wrong! The correct answer is They have many interconnected processes affecting each other ";
+                document.getElementById("result5").classList.add("wrong");
+            }
+        }
+        function checkAnswer6() {
+            var answer = document.querySelector('input[name="q6"]:checked').value;
+            if (answer === "SPEXone and HARP2 (polarimeters)") {
+                document.getElementById("result6").innerHTML = "Correct!";
+                document.getElementById("result6").classList.add("result");
+            } else {
+                document.getElementById("result6").innerHTML = "Wrong! The correct answer is SPEXone and HARP2 (polarimeters) ";
+                document.getElementById("result6").classList.add("wrong");
+            }
+        }
+        function checkAnswer7() {
+            var answer = document.querySelector('input[name="q7"]:checked').value;
+            if (answer === "By predicting harmful algal blooms that can affect shellfish") {
+                document.getElementById("result7").innerHTML = "Correct!";
+                document.getElementById("result7").classList.add("result");
+            } else {
+                document.getElementById("result7").innerHTML = "Wrong! The correct answer is By predicting harmful algal blooms that can affect shellfish";
+                document.getElementById("result7").classList.add("wrong");
+            }
+        }
+        function checkAnswer8() {
+            var answer = document.querySelector('input[name="q8"]:checked').value;
+            if (answer === "Experts who regularly use NASA satellite data") {
+                document.getElementById("result8").innerHTML = "Correct!";
+                document.getElementById("result8").classList.add("result");
+            } else {
+                document.getElementById("result8").innerHTML = "Wrong! The correct answer is Experts who regularly use NASA satellite data";
+                document.getElementById("result8").classList.add("wrong");
+            }
+        }
+        function checkAnswer9() {
+            var answer = document.querySelector('input[name="q9"]:checked').value;
+            if (answer === "Applying satellite data to address societal needs") {
+                document.getElementById("result9").innerHTML = "Correct!";
+                document.getElementById("result9").classList.add("result");
+            } else {
+                document.getElementById("result9").innerHTML = "Wrong! The correct answer is Applying satellite data to address societal needs";
+                document.getElementById("result9").classList.add("wrong");
+            }
+        }
+        function checkAnswer10() {
+            var answer = document.querySelector('input[name="q10"]:checked').value;
+            if (answer === "Underserved communities with limited access to air quality information") {
+                document.getElementById("result10").innerHTML = "Correct!";
+                document.getElementById("result10").classList.add("result");
+            } else {
+                document.getElementById("result10").innerHTML = "Wrong! The correct answer is Underserved communities with limited access to air quality information";
+                document.getElementById("result10").classList.add("wrong");
+            }
+        }
+
+    </script>
+</body>
+</html>
+    </html>

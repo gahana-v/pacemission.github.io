@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Mission - NASA for Kids!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+    body {
+        
+        font-family: 'Garamond', cursive, serif;
+        font-size: 26px;
+        background-image: url('bg1.jpg');
+        background-size: contain;
+        background-position: center;
+        color: #f0e8e8;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+       
+         
+        padding: 20px;
+        text-align: center;
+        animation: fadeIn 2s;
+    }
+    header h1 {
+        color: #ffffffd4;
+        font-size: 2.5em;
+    }
+    nav {
+        background-color: #0f1b30;
+        padding: 10px;
+        text-align: center;
+        animation: slideIn 2s;
+    }
+    nav a {
+        margin-right: 20px;
+      
+        color: #fef4f4;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .content {
+        padding: 20px;
+    }
+    .ppt-section, .quiz-section {
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    button {
+        background-color: #7030e7;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        margin-right: 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        animation: pulse 2s infinite;
+    }
+    button:hover {
+        background-color: #638b22;
+    }
+    
+    .ppt-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ppt-container a {
+        margin-right: 20px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+    }
+    .ppt-container a:hover {
+        box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+    }
+    .rotate {
+        position: absolute;
+right: 20px;
+margin-top: 70px;
+animation: rotate 8s linear infinite;
+transform-origin: 20% 50%;
+}
+.rotate img {
+width: 190px; /* adjust the image width and height as needed */
+height: 190px;
+/* optional: add a circular border radius */
+}
+
+@keyframes rotate {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+.top-left-image {
+position: absolute;
+top: 50px;
+left: 10px;
+}
+
+.top-left-image img {
+width: 100px; /* adjust the image width and height as needed */
+height: 100px;
+
+}
+.left-image {
+position: absolute;
+top: 590px;
+left: 120px;
+}
+
+.left-image img {
+width: 180px; /* adjust the image width and height as needed */
+height: 180px;
+}
+.right-image {
+position: absolute;
+top: 810px;
+right: 0px;
+}
+
+.right-image img {
+width: 250px; /* adjust the image width and height as needed */
+height: 210px;
+}
+.left1-image {
+position: absolute;
+top: 1120px;
+left: 70px;
+}
+
+.left1-image img {
+width: 280px; /* adjust the image width and height as needed */
+height: 280px;
+}
+.right1-image {
+position: absolute;
+top: 1380px;
+right: 0px;
+}
+
+.right1-image img {
+width: 290px; /* adjust the image width and height as needed */
+height: 290px;
+}
+.right2-image {
+position: absolute;
+top: 910px;
+right: 230px;
+}
+
+.right2-image img {
+width: 750px; /* adjust the image width and height as needed */
+height: 559px;
+}
+
+.ppt-cover {
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  height: 310px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+}
+
+.ppt-cover img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ppt-cover a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #7a7474;
+}
+
+.ppt-cover a:hover {
+  background-color: #f0f0f0;
+}
+
+</style>
+</head>
+</head>
+<body>
+    <div class="top-left-image">
+        <img src="rocket.png" alt="Your Image">
+      </div>
+
+      
+<header>
+    <h1>Welcome to NASA's PACE Mission!</h1>
+    
+</header>
+
+<nav>
+    <a href="PACE.html">Home</a>
+    <a href="mission.html">Mission</a>
+    <a href="#presentations">Presentations</a>
+    <a href="quiz.html">Quiz</a>
+    </nav>
+    </body>
+    <section class="ppt-section" id="presentations"></section>
+    <h2 style="text-align: center;">Presentations</h2>
+    <div class="ppt-container">
+        <div class="ppt-container">
+            <div class="ppt-cover">
+              <img src="Presentation1.jpg" alt="Presentation 1 Cover">
+              <a href="https://docs.google.com/presentation/d/1B2N9_jEwpMqkwoDSpxIheWTby6g6InPVxIF6vZtTtzE/edit?usp=sharing" target="_blank">View</a>
+              <a href="presentation.pptx" download="PACE_Mission_2">Download</a>
+            </div>
+            <div class="ppt-cover">
+              <img src="presentation2.jpg" alt="Presentation 2 Cover">
+              <a href="https://docs.google.com/presentation/d/1_zuYhliXL63LoBB_1rvrMXE02UUnrb174SU3SmozbCM/edit?usp=sharing" target="_blank">View</a>
+              <a href="presentation2.pptx" download="PACE_Mission_2">Download</a>
+            </div>
+            <div class="ppt-cover">
+              <img src="presentation3.jpg" alt="Presentation 3 Cover">
+              <a href="https://docs.google.com/presentation/d/1lxvhujkDXFVN2MhoaCDFNazpwvqgGZZ7dyFKK6i3R6s/edit?usp=sharing" target="_blank">View</a>
+              <a href="presentation3.pptx" download="PACE_Mission_2">Download</a>
+            </div>
+          </div>
+          <div class="ppt-cover">
+            <img src="presentation4.jpg" alt="Presentation 4 Cover">
+            <a href="https://docs.google.com/presentation/d/1scvpXUwTTvv6AsgJg190PnyAw-iUcAGD9gHBv47M7P0/edit?usp=sharing" target="_blank">View</a>
+            <a href="presentation4.pptx" download="PACE_Mission_2">Download</a>
+          </div>
+        </div>
+        
+        </section>
+        </html>

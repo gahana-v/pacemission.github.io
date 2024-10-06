@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Mission - NASA for Kids!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            
+            font-family: 'Garamond', cursive, serif;
+            font-size: 26px;
+            background-image: url('bg1.jpg');
+            background-size: contain;
+            background-position: center;
+            color: #f0e8e8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+           
+             
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            color: #ffffffd4;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #0f1b30;
+            padding: 10px;
+            text-align: center;
+            animation: slideIn 2s;
+        }
+        nav a {
+            margin-right: 20px;
+          
+            color: #fef4f4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .ppt-section, .quiz-section {
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+        button {
+            background-color: #7030e7;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin-right: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        button:hover {
+            background-color: #638b22;
+        }
+        
+        .ppt-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .ppt-container a {
+            margin-right: 20px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+        }
+        .ppt-container a:hover {
+            box-shadow: 0 0 10px rgba(15, 1, 63, 0.1);
+        }
+        .rotate {
+            position: absolute;
+  right: 20px;
+  margin-top: 70px;
+  animation: rotate 8s linear infinite;
+  transform-origin: 20% 50%;
+}
+.rotate img {
+  width: 190px; /* adjust the image width and height as needed */
+  height: 190px;
+   /* optional: add a circular border radius */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.top-left-image {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.top-left-image img {
+  width: 100px; /* adjust the image width and height as needed */
+  height: 100px;
+
+}
+.left-image {
+  position: absolute;
+  top: 590px;
+  left: 120px;
+}
+
+.left-image img {
+  width: 180px; /* adjust the image width and height as needed */
+  height: 180px;
+}
+.right-image {
+  position: absolute;
+  top: 810px;
+  right: 0px;
+}
+
+.right-image img {
+  width: 250px; /* adjust the image width and height as needed */
+  height: 210px;
+}
+.left1-image {
+  position: absolute;
+  top: 1120px;
+  left: 70px;
+}
+
+.left1-image img {
+  width: 280px; /* adjust the image width and height as needed */
+  height: 280px;
+}
+.right1-image {
+  position: absolute;
+  top: 1380px;
+  right: 0px;
+}
+
+.right1-image img {
+  width: 290px; /* adjust the image width and height as needed */
+  height: 290px;
+}
+.right2-image {
+  position: absolute;
+  top: 2250px;
+  right: 230px;
+}
+
+.right2-image img {
+  width: 750px; /* adjust the image width and height as needed */
+  height: 559px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-left-image">
+        <img src="rocket.png" alt="Your Image">
+      </div>
+
+      
+<header>
+    <h1>Welcome to NASA's PACE Mission!</h1>
+    
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="mission.html">Mission</a>
+    <a href="presentations.html">Presentations</a>
+    <a href="quiz.html">Quiz</a>
+    
+</nav>
+<div class="rotate">
+    <img src="satellite.png" alt="Your Image">
+    
+</div>
+<div class="left-image">
+    <img src="plankto.png" alt="Your Image">
+</div>
+</div>
+<div class="right-image">
+    <img src="ocean.png" alt="Your Image">
+</div>
+<div class="left1-image">
+    <img src="cloud.png" alt="Your Image">
+</div>
+<div class="right1-image">
+    <img src="earth1.png" alt="Your Image">
+</div>
+
+<section class="content" id="home"><br>
+    <h2>What is the PACE Mission?</h2>
+    <p>
+        NASA’s Plankton, Aerosol, Cloud, and ocean Ecosystem (PACE) mission helps us <br>
+        learn about Earth's oceans and atmosphere.
+        This mission studies tiny particles<br> in the air and the ocean to
+         better understand our environment.
+    </p><br>
+    <h2 style="text-align: right;">What does PACE do?</h2>
+    <p style="text-align: right;">
+        PACE will help scientists see how healthy the ocean is by checking on tiny plants<br> called phytoplankton, which are food for lots of sea creatures.<br> It will also help us understand air quality and how clouds affect the Earth's climate.
+    </p>  <br>
+    <h2>Why is PACE important?</h2> 
+    <p>
+        The ocean is super important because so many people and animals depend on it.<br> PACE will help scientists track changes like harmful algal blooms, which can <br>be bad for fish and people.Plus, by studying aerosols (tiny particles like dust or smoke)<br> and clouds,PACE will help us better understand and predict weather, climate, and air quality.
+    </p> <br>
+    <h2 style="text-align: right;">How does PACE do this?</h2>
+    <p style="text-align: right;">
+        PACE uses special tools to see colors in the ocean and measure light.<br> These tools are really advanced and can give scientists more details than ever before! <br>It can also study things in the atmosphere, like aerosols and clouds,<br> and show how they interact with the ocean.
+    </p><br>
+    <h2>Why study the ocean and atmosphere together?</h2>
+    <p>
+        The ocean and the air are connected in many ways. For example, some tiny<br> particles in the air can help plankton grow, and plankton can help form clouds.<br> PACE will help scientists see how all these parts work together to better understand our planet!
+    </p>
+
+</section>
+        
+
+</body>
+</html>
